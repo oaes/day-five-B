@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css grid another page</title>
+        <style>
+            *{
+                background-color: cadetblue;
+            }
+            .wrapper{
+                display: grid;
+                /* grid-template-columns: 1fr 2fr 1fr; */
+                grid-template-columns:repeat(3,1fr);
+                grid-column-gap: 1em;
+                grid-auto-rows: minmax(100px,auto);
+            }
+         
+         .wrapper >div{
+                background-color: #ccc;
+                padding: 1em;
+            }    
+            .wrapper >div:nth-child(odd){
+                background: #ddd;
+            }
+         </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                Lorem ipsum dolor sit amet.
+            </div>
+            <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a fuga est exercitationem consequatur totam similique, natus iusto voluptate autem placeat eos necessitatibus. Alias corrupti sapiente, reiciendis delectus in quasi maiores animi eveniet ex, id nulla corporis autem officiis obcaecati.
+                </div>
+                <div>
+                        Lorem ipsum dolor sit amet.
+                    </div>
+               <div>
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                        <div>
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <div>
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+        </div>
+
+
+    </body>
+</html>
